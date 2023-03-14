@@ -1,3 +1,4 @@
+import "./AnimalShow.css";
 import { useState } from "react";
 import { AnimalShow } from "./AnimalShow";
 
@@ -11,7 +12,7 @@ const getAnimal = () => {
 
 export const App = () => {
 
-  // starting login work
+  
 
   const [animals, setAnimals] = useState([]);
 
@@ -26,9 +27,9 @@ export const App = () => {
 
 
   return (
-    <div>
+    <div className="app">
       <button onClick={handleCLick}>Add Animal</button>
-      <div>{renderAnimal}</div>
+      <div className="animal-list">{renderAnimal}</div>
       
     </div>
   );
